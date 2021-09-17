@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Raspberry Pi web</title> -->
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <h1>Raspberry Pi through Web</h1>
+
+    <h2>Date and time: {{ time }}</h2>
+
+    <!-- <button id="on_btn">ON</button>
+    <button id="off_btn">OFF</button> -->
+
+    <!-- <a href="something" class="on_btn">ON</a> -->
+    <form action="" method="POST">
+        <input type="submit" name="on_btn" value="ON">
+        <input type="submit" name="on_btn" value="OFF">
+    </form>
+    <!-- <input type="submit" name="off_btn" value="OFF"> -->
+</body>
+</html>
